@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shirley</title>
+ <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header_top">
+                <div class="logo"><img src="./img/logo.png" art="로고"></div>    
+                <div class="search"></div>
+                <div class="mypage">
+                    <div class="money">
+                        <a href="">$0.00</a>
+                    </div>
+                    <div class="setting">
+                        <ul>
+                            <li><a href=""></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        <div class="header_b"></div>
+            <nav>
+                <ul>
+                    <li><a herf="#">Home</a></il>
+                    <li><a href="#">Books</a></li>
+                    <li><a herf="#">Magazines</a></il>
+                    <li><a herf="#">Textbooks</a></il>
+                    <li><a herf="#">Recomended</a></il>
+                    <li><a herf="#">Sale</a></il>
+                    <li><a herf="#">Pages</a></il>  
+            </nav>
+            <div class="category">  
+
+            </div>
+            
+       
+    </header>
+
+    <div id="slider">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            </div>
+             <div class="swiper-button-next"></div>
+             <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+<!-- Swiper -->
+  <div class="swiper new">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+             <div class="swiper-button-next"></div>
+             <div class="swiper-button-prev"></div>
+  </div>
+   
+  </div>
+</div>
+
+    <footer>
+         <div class="container">
+
+         </div>
+    </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                 navigation: {
+                     nextEl: ".swiper-button-next",
+                     prevEl: ".swiper-button-prev",
+                },
+            });
+
+            var swiper = new Swiper(".new", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+            clickable: true,
+        },
+        navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },
+        });
+  </script>
+</body>
+</html>
