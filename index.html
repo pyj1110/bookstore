@@ -1,128 +1,141 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shirley</title>
- <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- fontawsome cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
 
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
     <header>
         <div class="container">
             <div class="header_top">
-                <div class="logo"><img src="./img/logo.png" art="로고"></div>    
-                <div class="search"></div>
-                <div class="sidebar-search-input"></div>
-                <predictive-search id="predictive-search-toggle" search-open="false"></predictive-search>
-                <div class="mypage">
-                    <button class="icon-cart-active">
-                        <span class="icon-cart">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                            <span class="count-style bigcounter">0</span>
-                        </span>
+                <div class="logo">
+                    <img src="./img/logo.png" art="로고">
+                </div>
+                <div class="search">
+                    <input type="search" value="Search our store">
+                    <button class="header_seach_button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
+
+                </div>
+                <div class="mypage">
                     <div class="money">
+                        <i class="fa-solid fa-bag-shopping"></i>
                         <a href="">$0.00</a>
                     </div>
-                    <div class="setting"></div>
-                        <ul>
-                            <li><a href=""></a>
-                        </ul>
+                    <div class="setting">
+                        <i class="fa-solid fa-gear show"></i>
+                        <div class="setting_content show">
+                            <h4>Currency</h4>
+                            <ul>
+                                <li>USD - US Dollar</li>
+                                <li>EUR - Euro</li>
+                                <li>GBP - British Pound</li>
+                            </ul>
+                            <h4>Account</h4>
+                            <ul>
+                                <li>Login</li>
+                                <li>Create Account</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         <div class="header_b"></div>
-            <nav>
-                <ul>
-                    <li>
-                        <a herf="https://zhzhahd.github.io/book/sub.html">Home</a></il>
-                    <li class="submeue">
-                        <li class="submeue_il"></li>
-                        <a href="https://zhzhahd.github.io/book/sub.html">Home1</a></li>
-                    <li>
-                        <a href="https://zhzhahd.github.io/book/sub.html">Home2</a></li>
-                    <li>
-                        <a href="https://zhzhahd.github.io/book/sub.html">Home3</a></li>
-                    <li>
-                        <a href="https://zhzhahd.github.io/book/sub.html">Home RTL</a>
-                    </li>
-                    <li><a href="#">Books</a></li>
-                    <li><a herf="#">Magazines</a></il>
-                    <li><a herf="#">Textbooks</a></il>
-                    <li><a herf="#">Recomended</a></il>
-                    <li><a herf="#">Sale</a></il>
-                    <li><a herf="#">Pages</a></il>  
-            </nav>
-            <div class="category">  
+        <nav>
+            <ul>
+                <li><a herf="https://shirley-demo.myshopify.com/">Home</a></il>
+                <li><a href="#">Books</a></li>
+                <li><a herf="#">Magazines</a></il>
+                <li><a herf="#">Textbooks</a></il>
+                <li><a herf="#">Recomended</a></il>
+                <li><a herf="#">Sale</a></il>
+                <li><a herf="#">Pages</a></il>
+        </nav>
+        <div class="category">
 
-            </div>
-            
-       
+        </div>
+
+
     </header>
 
     <div id="slider">
         <!-- Swiper -->
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
             </div>
-             <div class="swiper-button-next"></div>
-             <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
-<!-- Swiper -->
-  <div class="swiper new">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
+    <!-- Swiper -->
+    <div class="swiper new">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
-             <div class="swiper-button-next"></div>
-             <div class="swiper-button-prev"></div>
-  </div>
-   
-  </div>
-</div>
+
+    </div>
+    </div>
 
     <footer>
-         <div class="container">
+        <div class="container">
 
-         </div>
+        </div>
     </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-            <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-                 navigation: {
-                     nextEl: ".swiper-button-next",
-                     prevEl: ".swiper-button-prev",
-                },
-            });
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
 
-            var swiper = new Swiper(".new", {
+        var swiper = new Swiper(".new", {
             slidesPerView: 3,
             spaceBetween: 30,
             pagination: {
-            clickable: true,
-        },
-        navigation: {
+                clickable: true,
+            },
+            navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
-                },
+            },
         });
-  </script>
+    </script>
 </body>
+
 </html>
