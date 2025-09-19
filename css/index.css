@@ -1,26 +1,141 @@
 @charset "utf-8";
 
 /* slider */
-#slider {width:1120px; height:500px; margin: 0 auto; background-color: purple;}
-.swiper {
-      width: 100%;
-      height: 100%;
-    }
+#slider {width:auto; height:600px; margin: 0 auto;}
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #444;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+.swiper {width: 100%; height: 100%;}
+.swiper-slide {font-size: 18px; display: flex; justify-content: center; align-items: center;}
+.swiper-slide img {display: block; width: 100%;height: 100%; object-fit: cover;}
+.textContainer {width: 600px; height: 100%; align-items: center; display: flex;}
+.textContainer p {font-size:15px; margin-top: 15px; margin-bottom: 30px;}
+.textContainer button {width: 155px; height: 50px; background: none; color: black;}
+.textContainer button:hover {background-color: #62ab00; color: white; transition: all 0.5s; border:none; cursor: pointer;}
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
 
-    .new{width: 1120px; height: 500px; margin: 0 auto; }
+.explain {width: 1200px; height: 200px; display: flex;  align-items: center; margin: 0 auto;}
+.icon_box {height:100px; width:100%; display: flex; justify-content:space-between; align-items: center; margin: 0;}
+.icon_box >div{display: flex; font-size: 14px;  flex-shrink: 1;}
+
+.twocut {width: 1200px; height: 240px; margin: 0 auto; display: flex; justify-content: space-between;}
+.twocut_1 {width: 570px; height: 240px; background-position: center; background-size: 100%; transition: all 0.3s;}
+.twocut_1:hover {background-size: 105%;}
+.twocut_text {height: 26px; color: #fff; padding: 30px; position: absolute;}
+.twocut_text p {font-size: 18px; margin: 0;}
+.twocut_text h1 {margin-bottom: 10px; font-weight: 400;}
+.twocut a {color: #fff; font-size: medium; border-bottom:1px solid #ffffff;}
+.ban_btn1:hover {color: #62ab00; font-style: normal;border-bottom-color: #62ab00;}
+
+.bookList_top {width: 1200px; height: 570px; display: flex; margin: 0 auto; flex-wrap: wrap;}
+.bookList_title {width: 1200px; height: 45px; display: flex; justify-content:space-between; align-items:center; margin-top: 40px;}
+.bookList_title h2 {font-size: 25px;}
+.bookList_title a {text-decoration:none; color: black;}
+.bookList_title a:hover {color: #62ab00;}
+.bookList_box {width:1200px; height: 480px; display:flex; justify-content:space-around; align-items:center;}
+.bookList_book_box {width: 270px; height: 420px; border: 1px solid #eee;}
+.bookList_img {width: 270px; height: 260px; display: flex; justify-content: center; margin:10px 0;}
+.bookList_img img {width: 160px; box-shadow: 2px 1px 10px grey; border-radius: 5px;}
+.bookList_text {width: 240px; height: 120px; margin:30px 10px; font-family: Arial, Helvetica, sans-serif;}
+.bookList_text h3 {margin-top:10px; font-weight: lighter;}
+.bookList_text span i{margin-top:10px; color: gold;}
+.bookList_img img:hover {cursor: pointer;}
+
+#slider {width: 100%; height: 600px; position: relative;}
+.Twobutton {position: absolute; left: 5%; top: 70%; font-size: 20px; z-index: 99999999; }
+.buttonLeft {display: block; width: 50px; height: 50px; background-color: #fff; border-radius: 50%; margin: 0px 0px 13px; border: 2px solid #eee;}
+.buttonLeft:hover {background-color: #62ab00; cursor: pointer;}
+.Twobutton i {padding: 14px;}
+.buttonRight {display: block; width: 50px; height: 50px; background-color: #fff; border-radius: 50%; margin: 0px 0px 13px; border: 2px solid #eee;}
+.buttonRight:hover {background-color: #62ab00; cursor: pointer;}
+.Twobutton i {padding: 14px;}
+
+#slider2 {position: relative; height: 100%; background-color: #eee; margin:20px 0 75px;}
+.slide_in {width: 1920px; height: 100%; position:relative; display: flex; align-items: center; justify-content: center;}
+.swiper_back_box {width: 635px; height: 510px; position:relative; display:flex;}
+#slider2 .swiper-slide:nth-of-type(1) .swiper_back_box::before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;background-color: rgba(124, 149, 170, 0.9);}
+#slider2 .swiper-slide:nth-of-type(2) .swiper_back_box::before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;background-color: rgba(120, 121, 125, 0.9);}
+#slider2 .swiper-slide:nth-of-type(3) .swiper_back_box::before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;background-color: rgba(86, 131, 139, 0.9);}
+#slider2 .swiper-slide:nth-of-type(4) .swiper_back_box::before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;background-color: #aaa9a0;opacity: 0.9;}
+#slider2 .swiper-slide:nth-of-type(5) .swiper_back_box::before {content:""; position:absolute; top:0; left:0; width:100%; height:100%;background-color: rgba(86, 131, 139, 0.9);}
+.imgContainer2 { width: 90%; position: absolute; top: 50%; left:50%; transform: translate(-50%, -50%); display:flex;}
+.txt_box2 {width: 250px; height: 370px; color: white; display: flex; flex-wrap:wrap; margin-left: 20px; padding: 80px 0;}
+.txt_box2 h2 {font-size: 35px;}
+.txt_box2 p {font: 20px bolder;}
+.txt_box2 p span {text-decoration: line-through; margin-left: 30px;}
+.txt_box2 button {width: 135px; height: 50px; color: #fff; background: none; border: 2px solid white;}
+.sliderButton2 a {color: #fff;}
+.txt_box2 button:hover {cursor: pointer; background-color: #62ab00; border: none;}
+.swiper_back_box {position: relative; z-index: 1;}
+
+.bookList_middle {width: 1200px; height: 570px; margin: 0 auto; flex-wrap: wrap;}
+.bookList_title2 {width: 1200px; height: 45px; display: flex; justify-content:space-between; align-items:center; margin-top: 40px;}
+.bookList_title2 h2 {font-size: 25px;}
+.bookList_title2 a {text-decoration:none; color: black;}
+.bookList_title2 a:hover {color: #62ab00;}
+.bookList_box2 {width:1200px; height: 480px; display:flex; justify-content:space-around; align-items:center;}
+.bookList_book2_box {width: 270px; height: 420px; border: 1px solid #eee;}
+.bookList_img2 {width: 270px; height: 260px; display: flex; justify-content: center; margin:10px 0;}
+.bookList_img2 img {width: 160px; box-shadow: 2px 1px 10px grey; border-radius: 5px;}
+.bookList_text2 {width: 240px; height: 120px; margin:30px 10px; font-family: Arial, Helvetica, sans-serif;}
+.bookList_text2 h3 {margin-top:10px; font-weight: lighter;}
+.bookList_text2 span i{margin-top:10px; color: gold;}
+.bookList_img2 img:hover {cursor: pointer;}
+
+.count_box {width: 100%; height: 650px; background-image: url(../img/time_back.jpg);}
+.count1 {width: 100%; height: 650px; background-color: rgba(22, 17, 33, 0.901); display: flex; justify-content: center; align-items: center; }
+.count2 {width: 1200px; height: 650px; display: flex;}
+.count2-1 {width: 700px; height: 650px; color: white; display: flex; justify-content: center; flex-direction: column;}
+.count2-1 h2 {padding-bottom: 30px; font-size: 39px; font-weight: 500;}
+.count2-1 p {padding-bottom: 30px; font-size: 15px;}
+.count2-1 ul {display: flex; padding-bottom: 50px; justify-content: space-around; align-items: center; text-align: center; text-align: center; font-size: 42px; font-weight: 500;}
+.count2-1 ul li {width: calc(100% / 4); border-left: 2px solid white; box-sizing: border-box;}
+.count2-1 ul li p {font-size: 15px; font-weight: 400;}
+.count2-1 ul li:last-child {border-right: 2px solid white;}
+.btn-1 {width: 177px; height: 70px; background:none; color: white; font-size: 17px; border: 2px solid;}
+.btn-1:hover {cursor: pointer; background: #62ab00; border-color: #62ab00; transition: .6s; text-align: center;}
+.count2-2 {width: 500px; height: 574px; margin: 0 20px; overflow: hidden; position: relative;}
+.count2-2 button {width: 55px; height: 55px; font-weight: 100; opacity: 0.9; position: absolute; top: 50%; border-radius: 50px; opacity: 0; transition: 0.5s;}
+.count2-2:hover button{opacity: 1;}
+#buttonLeft2 {pointer-events: all; width: 45px; height: 45px; background-color: white; border-radius: 50%; border: 1px solid gray; position: absolute; left:0%; top: 50%; z-index: 1; text-align: center; cursor: pointer;}
+#buttonRight2 {pointer-events: all; width: 45px; height: 45px; background-color: white; border-radius: 50%; border: 1px solid gray; position: absolute; right:0; top: 50%; z-index: 1; text-align: center; cursor: pointer;}
+.count2-2-2 img {width: 470px; margin-top: 100px;}
+.count2-2 .swiper-button-next::after {font-size: 20px; ;color: black; font-weight: bold;}
+.count2-2 .swiper-button-prev::after {font-size: 20px; color: black; font-weight: bold;}
+
+.bookList_last {width: 1200px; height: 583px; flex-wrap: wrap; margin: 0 auto;}
+.bookList_title3 {width: 1200px; height: 45px; display: flex; justify-content:space-between; align-items:center; margin-top: 40px;}
+.bookList_title3 h2 {font-size: 25px;}
+.bookList_title3 a {text-decoration:none; color: black;}
+.bookList_title3 a:hover {color: #62ab00;}
+.bookList_box3 {width:1200px; height: 480px; display:flex; justify-content:space-around; align-items:center;}
+.bookList_book3_box {width: 270px; height: 420px; border: 1px solid #eee;}
+.bookList_img3 {width: 270px; height: 260px; display: flex; justify-content: center; margin:10px 0;}
+.bookList_img3 img {width: 160px; box-shadow: 2px 1px 10px grey; border-radius: 5px;}
+.bookList_text3 {width: 240px; height: 120px; margin:30px 10px; font-family: Arial, Helvetica, sans-serif;}
+.bookList_text3 h3 {margin-top:10px; font-weight: lighter;}
+.bookList_text3 span i{margin-top:10px; color: gold;}
+.bookList_img3 img:hover {cursor: pointer;}
+
+.person {width: 100%; height: 465px; background-image: url(/img/personback.jpg);}
+.person_silde {width: 100%; height: 100%; background-color:rgba(25, 34, 45, 0.9); display: flex; justify-content: center; align-items: center;}
+.slider_last img {width: 100px; height: 100px; margin-bottom: 50px; border: none; border-radius: 50%; display: flex; justify-content: center;}
+.slider_last h4 {color: #fff;}
+.swiper-wrapper{-webkit-tap-highlight-color: transparent;}
+.person_img {display: flex; justify-content: center;}
+.slider_last h4 {font-weight: 400px; padding-top: 50px; justify-content: center; text-align: center;}
+.slider_last p {font-weight:400; line-height: 40px; letter-spacing: 0.7px; color: #fff; text-align: center;}
+
+.blogs {width: 1200px; height: 650px; margin: 0 auto; ;}
+.blogs_title {width: 100%; height: 130px; display: flex; justify-content: center;}
+.blogs_title h1 {margin-top: 50px;}
+.blogs_container {display: flex; justify-content: space-between;}
+.blogs_box {width: 360px; height: 460px;}
+.blogs_box_img {width: 100%; height: 230px; overflow: hidden; }
+.blogs_box_img img {width: 100%; transition: transform 0.3s ease; }
+.blogs_box_img:hover img {transform: scale(1.1); cursor: pointer;}
+.blogs_box_text a:hover {cursor: pointer; color: #62ab00;}
+.blogs_box_text {width:100%; height:320px; margin-top: 15px;}
+.blogs_box_text-1 {padding: 10px 0; border-top: 1px solid #919090; margin-top: 10px;}
+.blogs_box_text-1 a {color: #919090; font-size: 14px; margin-bottom: 20px;}
+.blogs_box_text-1 a:first-child:hover {color: #62ab00; cursor: text;}
+.blogs_box_text-1 a:hover {color: #62ab00; cursor: pointer;}
+.blogs_box_text p {font-size: 13px;}

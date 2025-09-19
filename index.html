@@ -22,7 +22,7 @@
                     <img src="./img/logo.png" art="로고">
                 </div>
                 <div class="search">
-                    <input type="search" value="Search our store">
+                    <input type="text" value="Search our store">
                     <button class="header_seach_button">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
@@ -51,89 +51,753 @@
                     </div>
                 </div>
             </div>
-        <div class="header_b"></div>
-        <nav>
-            <ul>
-                <li><a herf="https://shirley-demo.myshopify.com/">Home</a></il>
-                <li><a href="#">Books</a></li>
-                <li><a herf="#">Magazines</a></il>
-                <li><a herf="#">Textbooks</a></il>
-                <li><a herf="#">Recomended</a></il>
-                <li><a herf="#">Sale</a></il>
-                <li><a herf="#">Pages</a></il>
-        </nav>
-        <div class="category">
-
-        </div>
-
-
+            <div class="header_b"></div>
+            <nav>
+                <ul>
+                    <li>Home</il>
+                    <li>Books</li>
+                    <li>Magazines</il>
+                    <li>Textbooks</il>
+                    <li>Recomended</il>
+                    <li>Sale</il>
+                    <li>Pages</il>
+            </nav>
+            <div class="category">
+            </div>
     </header>
-
+    <hr>
     <div id="slider">
         <!-- Swiper -->
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
+                <div class="swiper-slide">
+                    <div class="textContainer">
+                        <div class="txt_box">
+                            <h1 style="font-size: 70px; width: 100%; font-weight:400;">Yoga Lesson</h1>
+                            <p>Lorem lpsum is simply dummy text of the printing and typesetting industry.It is a long
+                                established fact that a reader.
+                            </p>
+                            <button class="sliderButton">
+                                <a href="https://shirley-demo.myshopify.com/collections/all">SHOP NOW</a>
+                                <i class="fa-solid fa-cart-shopping"></i>"
+                            </button>
+                        </div>
+                    </div>
+                    <div class="imgContainer">
+                        <img src="./img/slider1.png" alt="슬라이더책사진">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="textContainer">
+                        <div class="txt_box">
+                            <h1 style="font-size: 70px; width: 100%; font-weight:400;">Child Care Book</h1>
+                            <p>Lorem lpsum is simply dummy text of the printing and typesetting industry.It is a
+                                long established fact that a reader.
+                            </p>
+                            <button class="sliderButton">
+                                <a href="https://shirley-demo.myshopify.com/collections/all">SHOP NOW</a>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="imgContainer">
+                        <img src="./img/slider2.png" alt="슬라이더책사진">
+                    </div>
+                </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="Twobutton">
+            <a href="javascript:void(0);" class="buttonLeft">
+                <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <a href="javascript:void(0);" class="buttonRight">
+                <i class="fa-solid fa-angle-down"></i>
+            </a>
         </div>
     </div>
-    <!-- Swiper -->
-    <div class="swiper new">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>
-
-    </div>
-    </div>
-
-    <footer>
-        <div class="container">
-
-        </div>
-    </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            loop: 30,
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: ".buttonLeft",
+                prevEl: ".buttonRight",
+            },
+        });
+    </script>
+    <!-- introduce -->
+    <div class="explain">
+        <div class="icon_box">
+            <div>
+                <img src="./img/icon01_small.png" alt="icon">
+                <div style="width: 210px;">
+                    <h2>Quick Delivery</h2>
+                    <p>Most product are free
+                        <br>
+                        shipping.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="./img/icon01_small.png" alt="icon">
+                <div style="width: 210px;">
+                    <h2>Pay with Easy</h2>
+                    <p>Most product are free
+                        <br>
+                        shipping.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="./img/icon03_small.png" alt="icon">
+                <div style="width: 210px;">
+                    <h2>Best Deal</h2>
+                    <p>Most product are free
+                        <br>
+                        shipping.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="./img\/icon04_small.png" alt="icon">
+                <div style="width: 210px;">
+                    <h2>Secured Payment</h2>
+                    <p>Most product are free
+                        <br>
+                        shipping.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="twocut">
+        <div class="twocut_1" style="background-image: url('./img/twocut_1.jpg');">
+            <div class="twocut_text">
+                <p>SPECIAL OFFER</p>
+                <h1>Buy 3. Get<br>1Free</h1>
+                <a class="ban_btn1" href="https://shirley-demo.myshopify.com/collections/all">SHOP NOW</a>
+            </div>
+        </div>
+        <div class="twocut_1" style="background-image: url('./img/twocut_2.jpg');">
+            <div class="twocut_text">
+                <p>$50.00</p>
+                <h1>Praise for
+                    <br>The Night Child
+                </h1>
+                <a class="ban_btn1" href="https://shirley-demo.myshopify.com/collections/all">SHOP NOW</a>
+            </div>
+        </div>
+    </div>
+    <div class="bookList_top">
+        <div class="bookList_title">
+            <h2>Flash Sale Offer</h2>
+            <a href="https://shirley-demo.myshopify.com/collections/all" style="font-size: 18px;">View
+                More</a>
+        </div>
+        <div class="bookList_box">
+            <div class="bookList_book_box">
+                <div class="bookList_img">
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F540824%3Ftimestamp%3D20250904110238"
+                        alt="book1">
+                </div>
+                <div class="bookList_text">
+                    <span> - Type1</span>
+                    <h3>싯다르타</h3>
+                    <h3 style="color:#62ab00;">₩8000</h3>
+                    <span> -
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="bookList_book_box">
+                <div class="bookList_img">
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F5690334%3Ftimestamp%3D20250822135634"
+                        alt="book2">
+                </div>
+                <div class="bookList_text">
+                    <span> - Type2</span>
+                    <h3>프랑켄슈타인(무삭제 완역본)</h3>
+                    <h3 style="color: #62ab00;">₩8800</h3>
+                    <span> -
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="bookList_book_box">
+                <div class="bookList_img">
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F3579488%3Ftimestamp%3D20241122114223"
+                        alt="book3">
+                </div>
+                <div class="bookList_text">
+                    <span> - Type3</span>
+                    <h3>Essentials of M</h3>
+                    <h3 style="color: #62ab00;">₩49000</h3>
+                    <span> -
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="bookList_book_box">
+                <div class="bookList_img">
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F3130560%3Ftimestamp%3D20190218000431"
+                        alt="book4">
+                </div>
+                <div class="bookList_text">
+                    <span> - Type4</span>
+                    <h3>Physics for Sci</h3>
+                    <h3 style="color: #62ab00;">₩52000</h3>
+                    <span> -
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slider2">
+        <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slid_in">
+                        <div class="swiper_back_box">
+                            <img class="img" src="./img/swiper_back1.jpg" alt="책 읽는 여자">
+                            <div class="imgContainer2">
+                                <img src="./img/slider3.png" alt="슬라이더책사진">
+                                <div class="textContainer2">
+                                    <div class="txt_box2">
+                                        <h2>A New World</h2>
+                                        <p>AUthor: Julojul Vondos</p>
+                                        <p>$75.00<span>$100.00</span></p>
+                                        <button class="sliderButton2">
+                                            <a href="https://shirley-demo.myshopify.com/collections/all">SHOP NOW</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper_back_box">
+                        <img class="img" src="./img/swiper_back2.jpg" alt="커피">
+                        <div class="imgContainer2">
+                            <img src="./img/slider4.png" alt="슬라이더책사진">
+                            <div class="textContainer2">
+                                <div class="txt_box2">
+                                    <h2>Jungle Life</h2>
+                                    <p>Author: Jourul Miya</p>
+                                    <p>$160.00<span>$190.00</span></p>
+                                    <button class="sliderButton2">
+                                        <a href="https://shirley-demo.myshopify.com/collections/all">SHOP NOW</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper_back_box">
+                        <img class="img" src="./img/swiper_back3.jpg" alt="서점">
+                        <div class="imgContainer2">
+                            <img src="./img/slider5.png" alt="슬라이더책사진">
+                            <div class="textContainer2">
+                                <div class="txt_box2">
+                                    <h2>Yoga Lession</h2>
+                                    <p>AUthor: Marcel Brown</p>
+                                    <p>$170.00<span>$180.00</span></p>
+                                    <button class="sliderButton2">
+                                        <a href="https://shirley-demo.myshopify.com/collections/all">SHOP NOW</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper_back_box">
+                        <img class="img" src="./img/swiper_back4.jpg" alt="책">
+                        <div class="imgContainer2">
+                            <img src="./img/slider6.png" alt="슬라이더책사진">
+                            <div class="textContainer2">
+                                <div class="txt_box2">
+                                    <h2>Heaven of life</h2>
+                                    <p>AUthor: momenz vong</p>
+                                    <p>$120.00<span>$150.00</span></p>
+                                    <button class="sliderButton2">
+                                        <a href="https://shirley-demo.myshopify.com/collections/all">SHOP NOW</a>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper_back_box">
+                        <img class="img" src="./img/swiper_back3.jpg" alt="서점">
+                        <div class="imgContainer2">
+                            <img src="./img/slider5.png" alt="슬라이더책사진">
+                            <div class="textContainer2">
+                                <div class="txt_box2">
+                                    <h2>Yoga Lession</h2>
+                                    <p>AUthor: Marcel Brown</p>
+                                    <p>$170.00<span>$180.00</span></p>
+                                    <button class="sliderButton2">
+                                        <a href="https://shirley-demo.myshopify.com/collections/all">SHOP NOW</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <div class="bookList_middle">
+        <div class="bookList_title2">
+            <h2>Flash Sale Offer</h2>
+            <a href="https://shirley-demo.myshopify.com/collections/all" style="font-size: 18px;">View
+                More</a>
+        </div>
+        <div class="bookList_box2">
+            <div class="bookList_book2_box">
+                <div class="bookList_img2">
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F1688378%3Ftimestamp%3D20230906151006"
+                        alt="book5">
+                </div>
+                <div class="bookList_text2">
+                    <span> - Type1</span>
+                    <h3>Visualization</h3>
+                    <h3 style="color:#62ab00;">₩194940</h3>
+                    <span> -
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="bookList_book2_box">
+                <div class="bookList_img2">
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F3321498%3Ftimestamp%3D20230804172050"
+                        alt="book6">
+                </div>
+                <div class="bookList_text2">
+                    <span> - Type2</span>
+                    <h3>Physics for Sci</h3>
+                    <h3 style="color: #62ab00;">₩52000</h3>
+                    <span> -
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="bookList_book2_box">
+                <div class="bookList_img2">
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F1706715%3Ftimestamp%3D20230918220439"
+                        alt="book7">
+                </div>
+                <div class="bookList_text2">
+                    <span> - Type3</span>
+                    <h3>Writing Woman i</h3>
+                    <h3 style="color: #62ab00;">₩32460</h3>
+                    <span> -
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="bookList_book2_box">
+                <div class="bookList_img2">
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F4881876%3Ftimestamp%3D20230503163533"
+                        alt="book8">
+                </div>
+                <div class="bookList_text2">
+                    <span> - Type4</span>
+                    <h3>Seven Keys to M</h3>
+                    <h3 style="color: #62ab00;">₩33530</h3>
+                    <span> -
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="count_box">
+        <div class="count1">
+            <div class="count2">
+                <div class="count2-1">
+                    <h2>Start a new series - Up to 50% off</h2>
+                    <p>we has the weekly promotion, keep up with us and you’ll get the best deal to get your loved
+                        stuff. Our
+                        design reflects the purity of contemporary forms for enduring appeal.
+                    </p>
+                    <ul>
+                        <li>00
+                            <p>Days</p>
+                        </li>
+                        <li>00
+                            <p>Hours</p>
+                        </li>
+                        <li>00
+                            <p>Min</p>
+                        </li>
+                        <li>00
+                            <p>Sec</p>
+                        </li>
+                    </ul>
+                    <button class="btn-1">SHOP NOW</button>
+                </div>
+                <div class="count2-2 swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="count2-2-2">
+                                <img src="/img/time_book1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="count2-2-2">
+                                <img src="/img/time_book2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <button id="buttonLeft2" class="swiper-button-prev">
+                        <!-- <i class="fa-solid fa-angle-left"></i> -->
+                    </button>
+                    <button id="buttonRight2" class="swiper-button-next">
+                        <!-- <i class="fa-solid fa-angle-right"></i> -->
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bookList_last">
+        <div class="bookList_title3">
+            <h2>Flash Sale Offer</h2>
+            <a href="https://shirley-demo.myshopify.com/collections/all" style="font-size: 18px;">View More</a>
+        </div>
+        <div class="bookList_box3">
+            <div class="bookList_book3_box">
+                <div class="bookList_img3">
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F2820264%3Ftimestamp%3D20230802184653"
+                        alt="book9">
+                </div>
+                <div class="bookList_text3">
+                    <span> - Type1</span>
+                    <h3>Linear Algebra</h3>
+                    <h3 style="color: #62ab00;">₩15000</h3>
+                    <span> -
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="bookList_book3_box">
+                <div class="bookList_img3">
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F5453078%3Ftimestamp%3D20240422183639"
+                        alt="book10">
+                </div>
+                <div class="bookList_text3">
+                    <span> - Type2</span>
+                    <h3>Forging the Mod</h3>
+                    <h3 style="color: #62ab00;">₩64240</h3>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="bookList_book3_box">
+                <div class="bookList_img3">
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F4949204%3Ftimestamp%3D20221108005752"
+                        alt="book11">
+                </div>
+                <div class="bookList_text3">
+                    <span> -Type3</span>
+                    <h3>Modern Quantum</h3>
+                    <h3 style="color: #62ab00;">₩130308</h3>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="bookList_book3_box">
+                <div class="bookList_img3">
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F5600439%3Ftimestamp%3D20240203164118"
+                        alt="book12">
+                </div>
+                <div class="bookList_text3">
+                    <span> -Type4</span>
+                    <h3>Modern Quilting</h3>
+                    <h3 style="color: #62ab00;">₩32300</h3>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="person">
+        <div class="person_silde">
+            <div id="slider">
+                <div class="swiper personswiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider_last">
+                                <div class="person_img">
+                                    <img src="/img/person1.jpg" alt="person">
+                                </div>
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmode tempor
+                                    incididunt ut labore et dolore<br>
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea
+                                    <br>
+                                    commodo consequat Duis aute irure dolor in reprehenderit."
+                                </p>
+                                <h4>HESTER PERKINS</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider_last">
+                                <div class="person_img">
+                                    <img src="/img/person2.jpg" alt="person">
+                                </div>
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmode tempor
+                                    incididunt ut labore et dolore<br>
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea
+                                    <br>
+                                    commodo consequat Duis aute irure dolor in reprehenderit."
+                                </p>
+                                <h4>HESTER PERKINS</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider_last">
+                                <div class="person_img">
+                                    <img src="/img/person3.jpg" alt="person">
+                                </div>
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmode tempor
+                                    incididunt ut labore et dolore<br>
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea
+                                    <br>
+                                    commodo consequat Duis aute irure dolor in reprehenderit."
+                                </p>
+                                <h4>HESTER PERKINS</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blogs">
+        <div class="blogs_title">
+            <h1>LATEST BLOGS</h1>
+        </div>
+        <div class="blogs_container">
+            <div class="blogs_box">
+                <div class="blogs_box_img">
+                    <img src="/img/blog1.jpg" alt="블로그1">
+                </div>
+                <div class="blogs_box_text">
+                    <a href="https://shirley-demo.myshopify.com/blogs/news/signficant-reading-has-a-more-info-number">Signficant
+                        reading has a more info number</a>
+                    <div class="blogs_box_text-1">
+                        <a href="#">10 November, 2019</a>
+                        \
+                        <a
+                            href="https://shirley-demo.myshopify.com/blogs/news/signficant-reading-has-a-more-info-number">0
+                            comments</a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ipsum deleniti repellendus nam
+                        deserunt vitae ullam amet quos! Nesciunt, quo. Lorem, ipsum dolor. Lorem ipsum dolor sit
+                        amet consectetur adipisicing...
+                    </p>
+                </div>
+            </div>
+            <div class="blogs_box">
+                <div class="blogs_box_img">
+                    <img src="/img/blog2.jpg" alt="블로그2">
+                </div>
+                <div class="blogs_box_text">
+                    <a href="https://shirley-demo.myshopify.com/blogs/news/signficant-reading-has-a-more-info-number">Activities
+                        of the Frankfurt Book International</a>
+                    <div class="blogs_box_text-1">
+                        <a href="#">10 November, 2019</a>
+                        \
+                        <a
+                            href="https://shirley-demo.myshopify.com/blogs/news/signficant-reading-has-a-more-info-number">0
+                            comments</a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ipsum deleniti repellendus
+                        nam deserunt vitae ullam amet quos! Nesciunt, quo. Lorem, ipsum dolor. Lorem ipsum dolor
+                        sit amet consectetur adipisicing...
+                    </p>
+                </div>
+            </div>
+            <div class="blogs_box">
+                <div class="blogs_box_img">
+                    <img src="/img/blog3.jpg" alt="블로그3">
+                </div>
+                <div class="blogs_box_text">
+                    <a href="https://shirley-demo.myshopify.com/blogs/news/signficant-reading-has-a-more-info-number">The
+                        London Book Fair is to be packed with exciting</a>
+                    <div class="blogs_box_text-1">
+                        <a href="#">10 November, 2019</a>
+                        \
+                        <a
+                            href="https://shirley-demo.myshopify.com/blogs/news/signficant-reading-has-a-more-info-number">0
+                            comments</a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ipsum deleniti
+                        repellendus nam deserunt vitae ullam amet quos! Nesciunt, quo. Lorem, ipsum dolor.
+                        Lorem ipsum dolor sit amet consectetur adipisicing...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <footer> -->
+    <footer>
+        <div class="footer_footer">
+        <div class="footer1">
+            <div class="footer_container">
+                <a href="http://127.0.0.1:5501/index.html">
+                    <img src="/img/logo.png" alt="footer_logo">
+                </a>
+            </div>
+            <p>Subscribe to our newsleter, Eneter your email adrress</p>
+            <div class="footer_button">
+                <input type="email" class="value" placeholder="email@example.com">
+                    <div class="In_E_btn">
+                        <i class="fa-regular fa-paper-plane" style="color: white;"></i>
+                    </div>
+            </div>
+        </div>
+            <div class="footer_box1">
+            <div class="footer1-1">
+                <p>Account</p>
+                <p>Login</p>
+                <p>Register</p>
+                <p>My Account</p>
+            </div>
+            <div class="footer1-2">
+                <p>Footer Meue</p>
+                <p>Search</p>
+                <p>Contact Us</p>
+                <p>Shop</p>
+            </div>
+            <div class="footer1-3">
+                <p>About Store</p>
+                <p>No. 96, Jecica City, NJ 07305, New York, USA</p>
+                <p>Phone: <span>123-456-7890</span><br>
+                    <span>@example.com</span></p>
+                <p>Open Hours: MN - ST: 8:00AM - 9:00PM</p>
+            </div>
+            </div>
+            </div>
+    </footer>
+    <hr>
+    <div class="footer_last">
+        <div id="footer_last_box">
+            <div id="sns">
+                <a href="http://127.0.0.1:5501/index.html">Facebook</a>
+                <a href="http://127.0.0.1:5501/index.html">Twitter</a>
+                <a href="http://127.0.0.1:5501/index.html">Linkedin</a>
+                <a href="http://127.0.0.1:5501/index.html">Instagram</a>
+            </div>
+            <div id="footer_txt">Copyright All Right Reseved</div>
+            <div id="card">  
+            <a href="sub.html"><img src="/img/footer_card.jpg" alt="card_img"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".buttonLeft",
+                prevEl: ".buttonRight",
             },
         });
 
-        var swiper = new Swiper(".new", {
+        var swiper1 = new Swiper(".mySwiper2", {
             slidesPerView: 3,
-            spaceBetween: 30,
-            pagination: {
-                clickable: true,
-            },
+            spaceBetween: 0,
+            centeredSlides: true,
+            loop: true,
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
+                nextEl: ".mySwiper2 .swiper-button-next",
+                prevEl: ".mySwiper2 .swiper-button-prev",
+            }
+        });
+
+        var swiper2 = new Swiper(".count2-2", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            navigation: {
+                nextEl: ".count2-2 .swiper-button-next",
+                prevEl: ".count2-2 .swiper-button-prev",
+            }
+        });
+
+        var swiper3 = new Swiper(".personswiper", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteration: false,
+            }
         });
     </script>
 </body>
